@@ -10,7 +10,7 @@ header.mhs-header {
 			background-image: url("images/mhs-logo-white.svg");
 			background-repeat: no-repeat;
 			background-size: auto 100%;
-			background-position: center center;
+			background-position: left center;
 			a.mhs-home-link {
 				width: 100%;
 				height: 100%;
@@ -27,6 +27,7 @@ header.mhs-header {
 		height: 100vh;
 		display: flex;
 		align-items: center;
+		z-index: 999;
 		.mhs-primary-nav-line {
 			position: absolute;
 			right: 30px;
@@ -40,13 +41,15 @@ header.mhs-header {
 			padding-right: 25px;
 			li {
 				display: block;
-				margin: 0 20px;
-				padding-right: 18px;
+				float: none;
+				margin: 40px 0;
+				padding-right: 22px;
 				background-image: url("images/circle-white.svg");
-				background-size: 10px 10px;
+				background-size: 11px 11px;
 				background-position: right center;
 				background-repeat: no-repeat;
 				color: #fff;
+				text-align: right;
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -56,6 +59,7 @@ header.mhs-header {
 					display: inline-block;
 					line-height: 20px;
 					text-align: right;
+					font-weight: 400;
 				}
 			}
 		}

@@ -8237,12 +8237,13 @@ h1 span, h1 strong {
 
 h2 {
   font-family: "Lato", sans-serif;
-  font-size: 2.5em;
+  font-size: 2.667em;
   line-height: 1.15em;
   font-weight: normal;
-  letter-spacing: -2px;
+  letter-spacing: -1px;
   margin-bottom: 0.66em;
   color: inherit;
+  font-weight: 300;
   text-transform: uppercase;
 }
 @media screen and (max-width: 1280px) {
@@ -8381,7 +8382,7 @@ header.mhs-header .site-branding .mhs-logo {
   background-image: url("images/mhs-logo-white.svg");
   background-repeat: no-repeat;
   background-size: auto 100%;
-  background-position: center center;
+  background-position: left center;
 }
 header.mhs-header .site-branding .mhs-logo a.mhs-home-link {
   width: 100%;
@@ -8399,6 +8400,7 @@ header.mhs-header .mhs-primary-nav {
   display: flex;
   -ms-flex-align: center;
       align-items: center;
+  z-index: 999;
 }
 header.mhs-header .mhs-primary-nav .mhs-primary-nav-line {
   position: absolute;
@@ -8414,13 +8416,15 @@ header.mhs-header .mhs-primary-nav ul.nav-menu {
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li {
   display: block;
-  margin: 0 20px;
-  padding-right: 18px;
+  float: none;
+  margin: 40px 0;
+  padding-right: 22px;
   background-image: url("images/circle-white.svg");
-  background-size: 10px 10px;
+  background-size: 11px 11px;
   background-position: right center;
   background-repeat: no-repeat;
   color: #fff;
+  text-align: right;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   text-decoration: none;
@@ -8431,4 +8435,5 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   display: inline-block;
   line-height: 20px;
   text-align: right;
+  font-weight: 400;
 }
