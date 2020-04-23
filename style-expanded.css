@@ -8303,10 +8303,11 @@ body {
   height: 100vh;
   position: relative;
   z-index: 1;
+  background-attachment: fixed;
 }
 
 .mhs-intro {
-  background-image: url("images/mhs-intro.jpg");
+  background-image: url("images/mhs-bg2.jpg");
   background-position: left center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -8333,6 +8334,22 @@ body {
 
 .mhs-gallery {
   background: #fff;
+}
+
+.mhs-spaces {
+  background-image: url("images/mhs-bg1.jpg");
+}
+
+.mhs-pricing {
+  background-image: url("images/mhs-bg1.jpg");
+}
+
+.mhs-contact {
+  background-image: url("images/mhs-bg1.jpg");
+}
+
+.mhs-faq {
+  background-image: url("images/mhs-bg1.jpg");
 }
 
 /* The rest of the main page styles go here. */
