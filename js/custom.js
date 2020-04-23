@@ -10,11 +10,10 @@
 	var aniActive = false;
 	
 	$(window).scroll(function(evt){
-		check_if_in_view();
 		scroll_actions();
 	});
 	
-	function check_if_in_view() {
+	function scroll_actions() {
 	  var window_height = $(window).height();
 	  var window_width = $(window).width();
 	  var window_top_position = $(window).scrollTop();
@@ -34,10 +33,6 @@
 	      $element.removeClass('in-view');
 	    }
 	  });
-	  
-	}
-	
-	function scroll_actions(){
 		
 		var sec1 = $(".mhs-intro").offset();
 		var sec2 = $(".mhs-gallery").offset();
@@ -90,7 +85,7 @@
 	}
 	
 	$(window).load(function(){
-		check_if_in_view();
+		scroll_actions();
 	});
 	
 })( jQuery );
