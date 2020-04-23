@@ -78,17 +78,19 @@ body {
 			width: 200px;
 			padding-top: 190px;
 			li {
-				border: 1px solid #000;
-				border-radius: 0px;
-				color: #000;
-				transition-duration: 0.5s;
-				background: #fff;
-				&.kt-tab-title-inactive {
-					
-				}
+				border: none;
 				&.kt-tab-title-active {
-					background: #000;
-					color: #fff;
+					a {
+						background: #000;	
+						color: #fff;
+					}
+				}
+				a {
+					border-radius: none;
+					border: 1px solid #000;
+					transition-duration: 0.5s;
+					background: #fff;
+					color: #000;
 				}
 			}
 		}

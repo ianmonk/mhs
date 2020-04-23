@@ -8341,15 +8341,18 @@ body {
   padding-top: 190px;
 }
 .mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li {
-  border: 1px solid #000;
-  border-radius: 0px;
-  color: #000;
-  transition-duration: 0.5s;
-  background: #fff;
+  border: none;
 }
-.mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li.kt-tab-title-active {
+.mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li.kt-tab-title-active a {
   background: #000;
   color: #fff;
+}
+.mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li a {
+  border-radius: none;
+  border: 1px solid #000;
+  transition-duration: 0.5s;
+  background: #fff;
+  color: #000;
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap .wp-block-kadence-tab {
   border: none;
@@ -8486,7 +8489,7 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   text-align: right;
   font-weight: 400;
   transition-duration: 1s;
-  opacity: 0.4;
+  opacity: 0.25;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li.active a {
   opacity: 1;
