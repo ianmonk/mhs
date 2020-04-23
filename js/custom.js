@@ -41,8 +41,6 @@
 		var sec5 = $(".mhs-contact").offset();
 		var sec6 = $(".mhs-faq").offset();
 		
-		console.log(sec2);
-		
 		var vpos = $(document).scrollTop();
 	
 		var sec1_trigger = sec1.top-100;
@@ -58,6 +56,7 @@
 		if((vpos >= sec1_trigger) && (vpos < sec2_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
 			$('.mhs-primary-nav li.menu-item-23').addClass("active");
+			console.log("I'm in section 2");
 		}
 		else if ((vpos >= sec2_trigger) && (vpos < sec3_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
@@ -74,14 +73,6 @@
 		else if ((vpos >= sec5_trigger) && (vpos < sec6_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
 			$('.mhs-primary-nav li.menu-item-27').addClass("active");
-		}
-	
-		if((vpos >= sec2.top) && (vpos < sec3.top)){
-			$(".mhs-primary-nav").addClass("mhs-dark");
-			$(".mhs-logo").addClass("mhs-dark");
-		} else {
-			$(".mhs-primary-nav").removeClass("mhs-dark");
-			$(".mhs-logo").removeClass("mhs-dark");
 		}
 		
 	}
