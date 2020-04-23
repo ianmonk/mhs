@@ -2,6 +2,7 @@ header.mhs-header {
 	position: fixed;
 	top: 0px;
 	width: 100%;
+	z-index: 999;
 	.site-branding {
 		margin: 50px 0 0 50px;
 		.mhs-logo {

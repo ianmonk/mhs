@@ -8386,6 +8386,8 @@ body {
 .mhs-section {
   min-height: 100vh;
   height: 100vh;
+  position: relative;
+  z-index: 1;
 }
 
 .mhs-intro {
@@ -8457,6 +8459,7 @@ header.mhs-header {
   position: fixed;
   top: 0px;
   width: 100%;
+  z-index: 999;
 }
 header.mhs-header .site-branding {
   margin: 50px 0 0 50px;
