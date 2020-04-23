@@ -55,24 +55,39 @@
 		}
 		if((vpos >= sec1_trigger) && (vpos < sec2_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
-			$('.mhs-primary-nav li.menu-item-23').addClass("active");
-			console.log("I'm in section 2");
+			$('.mhs-primary-nav li.menu-item-22').addClass("active");
+			$(".mhs-primary-nav").removeClass("mhs-dark");
+			$(".mhs-logo").removeClass("mhs-dark");
 		}
 		else if ((vpos >= sec2_trigger) && (vpos < sec3_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
-			$('.mhs-primary-nav li.menu-item-25').addClass("active");
+			$('.mhs-primary-nav li.menu-item-23').addClass("active");
+			$(".mhs-primary-nav").addClass("mhs-dark");
+			$(".mhs-logo").addClass("mhs-dark");
 		}
 		else if ((vpos >= sec3_trigger) && (vpos < sec4_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
-			$('.mhs-primary-nav li.menu-item-26').addClass("active");
+			$('.mhs-primary-nav li.menu-item-25').addClass("active");
+			$(".mhs-primary-nav").removeClass("mhs-dark");
+			$(".mhs-logo").removeClass("mhs-dark");
 		}
 		else if ((vpos >= sec4_trigger) && (vpos < sec5_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
-			$('.mhs-primary-nav li.menu-item-24').addClass("active");
+			$('.mhs-primary-nav li.menu-item-26').addClass("active");
+			$(".mhs-primary-nav").removeClass("mhs-dark");
+			$(".mhs-logo").removeClass("mhs-dark");
 		}
 		else if ((vpos >= sec5_trigger) && (vpos < sec6_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
+			$('.mhs-primary-nav li.menu-item-24').addClass("active");
+			$(".mhs-primary-nav").removeClass("mhs-dark");
+			$(".mhs-logo").removeClass("mhs-dark");
+		}
+		else if (vpos >= sec6_trigger) {
+			$('.mhs-primary-nav li.menu-item').removeClass("active");
 			$('.mhs-primary-nav li.menu-item-27').addClass("active");
+			$(".mhs-primary-nav").removeClass("mhs-dark");
+			$(".mhs-logo").removeClass("mhs-dark");
 		}
 		
 	}
