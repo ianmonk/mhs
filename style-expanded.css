@@ -8242,6 +8242,8 @@ h2 {
   font-weight: normal;
   letter-spacing: -2px;
   margin-bottom: 0.66em;
+  color: inherit;
+  text-transform: uppercase;
 }
 @media screen and (max-width: 1280px) {
   h2 {
@@ -8291,12 +8293,17 @@ html {
   margin-bottom: 0px;
 }
 
-mhs-home-top {
+.mhs-section {
+  min-height: 100vh;
   height: 100vh;
+}
+
+.mhs-intro {
   background-image: url("images/mhs-img1.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
+  color: #fff;
 }
 
 /* The rest of the main page styles go here. */
@@ -8338,13 +8345,18 @@ footer.site-footer strong {
     bottom: 15px;
   }
 }
+header.mhs-header {
+  position: fixed;
+  top: 0px;
+  width: 100%;
+}
 header.mhs-header .site-branding {
   margin: 30px 0 0 30px;
 }
 header.mhs-header .site-branding .mhs-logo {
-  width: 80px;
-  height: 80px;
-  background-image: url("images/mhs-logo-black.svg");
+  width: 110px;
+  height: 110px;
+  background-image: url("images/mhs-logo-white.svg");
   background-repeat: no-repeat;
   background-size: auto 100%;
   background-position: center center;

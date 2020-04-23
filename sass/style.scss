@@ -32,12 +32,17 @@ html{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 	margin-bottom: 0px;
 }
 
-mhs-home-top {
+.mhs-section {
+	min-height: 100vh;
 	height: 100vh;
+}
+
+.mhs-intro {
 	background-image: url("images/mhs-img1.jpg");
 	background-position: center center;
 	background-size: cover;
 	background-repeat: no-repeat;
+	color: #fff;
 }
 
 /* The rest of the main page styles go here. */

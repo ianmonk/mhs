@@ -1,10 +1,13 @@
 header.mhs-header {
+	position: fixed;
+	top: 0px;
+	width: 100%;
 	.site-branding {
 		margin: 30px 0 0 30px;
 		.mhs-logo {
-			width: 80px;
-			height: 80px;
-			background-image: url("images/mhs-logo-black.svg");
+			width: 110px;
+			height: 110px;
+			background-image: url("images/mhs-logo-white.svg");
 			background-repeat: no-repeat;
 			background-size: auto 100%;
 			background-position: center center;
