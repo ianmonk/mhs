@@ -2,7 +2,7 @@
 /*!
 Theme Name: Mansion Hill Sanctuary
 Theme URI: http://underscores.me/
-Author: Underscores.me
+Author: Ian R. Monk
 Author URI: http://underscores.me/
 Description: Description
 Version: 1.0.0
@@ -8287,7 +8287,18 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
-/* Homepage-specific styles */
+.wp-block-columns {
+  margin-bottom: 0px;
+}
+
+mhs.home-top {
+  height: 100vh;
+  background-image: url("images/mhs-img1.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 /* The rest of the main page styles go here. */
 .type-page h1.entry-title {
   display: none;
