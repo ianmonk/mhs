@@ -8435,14 +8435,20 @@ body {
   color: #fff;
 }
 .mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li a {
-  border-radius: 0px;
-  border: 1px solid #000;
+  border-radius: 0px !important;
+  border-width: 1px !important;
+  border-color: #000;
+  border-style: solid;
   transition-duration: 0.5s;
   background: #fff;
   color: #000;
   text-align: center;
   text-transform: uppercase;
   font-weight: 400;
+  display: block;
+}
+.mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap {
+  width: calc(100% - 380px);
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap .wp-block-kadence-tab {
   border: none;
