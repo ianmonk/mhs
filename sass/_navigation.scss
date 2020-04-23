@@ -17,6 +17,9 @@ header.mhs-header {
 				height: 100%;
 				display: block;
 			}
+			&.mhs-dark {
+				background-image: url("images/mhs-logo-black.svg");
+			}
 		}
 	}
 	.mhs-primary-nav {
@@ -37,6 +40,7 @@ header.mhs-header {
 			height: 88%;
 			background: #fff;
 			z-index: 1;
+			transition-duration: 1s;
 		}
 		ul.nav-menu {
 			padding-right: 25px;
@@ -51,6 +55,7 @@ header.mhs-header {
 				background-repeat: no-repeat;
 				color: #fff;
 				text-align: right;
+				transition-duration: 1s;
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -61,6 +66,21 @@ header.mhs-header {
 					line-height: 20px;
 					text-align: right;
 					font-weight: 400;
+					transition-duration: 1s;
+				}
+			}
+		}
+		&.mhs-dark {
+			.mhs-primary-nav-line {
+				background: #000;
+			}
+			ul.nav-menu {
+				li {
+					color: #000;
+					background-image: url("images/circle-black.svg");
+					a {
+						color: #000;
+					}
 				}
 			}
 		}

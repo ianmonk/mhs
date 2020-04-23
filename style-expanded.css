@@ -8331,6 +8331,10 @@ body {
   margin-left: 0px;
 }
 
+.mhs-gallery {
+  background: #fff;
+}
+
 /* The rest of the main page styles go here. */
 .type-page h1.entry-title {
   display: none;
@@ -8392,6 +8396,9 @@ header.mhs-header .site-branding .mhs-logo a.mhs-home-link {
   height: 100%;
   display: block;
 }
+header.mhs-header .site-branding .mhs-logo.mhs-dark {
+  background-image: url("images/mhs-logo-black.svg");
+}
 header.mhs-header .mhs-primary-nav {
   position: fixed;
   right: 0px;
@@ -8413,6 +8420,7 @@ header.mhs-header .mhs-primary-nav .mhs-primary-nav-line {
   height: 88%;
   background: #fff;
   z-index: 1;
+  transition-duration: 1s;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu {
   padding-right: 25px;
@@ -8428,6 +8436,7 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li {
   background-repeat: no-repeat;
   color: #fff;
   text-align: right;
+  transition-duration: 1s;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   text-decoration: none;
@@ -8439,4 +8448,15 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   line-height: 20px;
   text-align: right;
   font-weight: 400;
+  transition-duration: 1s;
+}
+header.mhs-header .mhs-primary-nav.mhs-dark .mhs-primary-nav-line {
+  background: #000;
+}
+header.mhs-header .mhs-primary-nav.mhs-dark ul.nav-menu li {
+  color: #000;
+  background-image: url("images/circle-black.svg");
+}
+header.mhs-header .mhs-primary-nav.mhs-dark ul.nav-menu li a {
+  color: #000;
 }
