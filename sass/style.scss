@@ -1,0 +1,94 @@
+/*!
+Theme Name: dcg
+Theme URI: http://underscores.me/
+Author: Underscores.me
+Author URI: http://underscores.me/
+Description: Description
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: LICENSE
+Text Domain: dcg
+Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+
+dcg is based on Underscores https://underscores.me/, (C) 2012-2017 Automattic, Inc.
+Underscores is distributed under the terms of the GNU GPL v2 or later.
+
+Normalizing styles have been helped along thanks to the fine work of
+Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
+*/
+
+@charset "UTF-8";
+@import "../node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "underscores";
+@import "mixins";
+@import "typography";
+
+html{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
+
+/* Homepage-specific styles */
+
+body.home {
+	
+}
+
+/* The rest of the main page styles go here. */
+
+.type-page {
+	h1.entry-title {
+		display: none;
+	}
+	.post-thumbnail {
+		display: none;
+	}
+	.entry-content {
+		margin-top: 0px;
+	}
+	ul {
+		margin-left: 0px;	
+		padding: 0px;
+		li {
+			
+		}
+	}
+}
+
+
+/* Footer */
+
+footer.site-footer {
+	background-color: #000;
+	text-align: center;
+	padding: 30px 5%;
+	color: #666;
+	font-size: 13px;
+	letter-spacing: 2px;
+	strong {
+		color: #fff;
+		font-weight: 400;
+	}
+}
+
+#wpadminbar {
+	
+}
+
+
+@keyframes down-arrow {
+	0% {
+		bottom: 15px;
+	}
+	50% {
+		bottom: 25px;
+	}
+	100% {
+		bottom: 15px;
+	}
+}
+
+
+@import "forms";
+@import "navigation";
+

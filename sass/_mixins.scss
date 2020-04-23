@@ -1,0 +1,76 @@
+
+@mixin ease1 {
+	-webkit-transition: all 1750ms cubic-bezier(0.500, 0.010, 0.255, 0.995);
+   -moz-transition: all 1750ms cubic-bezier(0.500, 0.010, 0.255, 0.995);
+     -o-transition: all 1750ms cubic-bezier(0.500, 0.010, 0.255, 0.995);
+        transition: all 1750ms cubic-bezier(0.500, 0.010, 0.255, 0.995);
+}
+
+@mixin ease2 {
+	-webkit-transition: all 1s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+   -moz-transition: all 1s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+     -o-transition: all 1s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+        transition: all 1s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+}
+
+@mixin ease3 {
+	-webkit-transition: all 0.66s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+   -moz-transition: all 0.66s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+     -o-transition: all 0.66s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+        transition: all 0.66s cubic-bezier(0.500, 0.010, 0.255, 0.995);
+}
+
+@mixin ease4 {
+	-webkit-transition: all 1000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+   -moz-transition: all 1000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+     -o-transition: all 1000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+        transition: all 1000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+}
+
+@mixin ease5 {
+	-webkit-transition: all 2000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+   -moz-transition: all 2000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+     -o-transition: all 2000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+        transition: all 2000ms cubic-bezier(0.040, 0.600, 0.205, 0.990);
+}
+
+@mixin trans1 {
+	-webkit-transition: all 0.5s ease-out;
+   -moz-transition: all 0.5s ease-out;
+     -o-transition: all 0.5s ease-out;
+        transition: all 0.5s ease-out;
+}
+
+@mixin rotateLeft {
+	 -webkit-transform: rotate(-90deg);
+    -moz-transform: rotate(-90deg);
+    -o-transform: rotate(-90deg);
+    -ms-transform: rotate(-90deg);
+    transform: rotate(-90deg);
+}
+
+@mixin resetRotate {
+	 -webkit-transform: rotate(0deg);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+}
+
+@mixin mobile {
+	@media screen and (max-width: 720px) {
+		@content;
+	}
+}
+
+@mixin small {
+	@media screen and (max-width: 1280px) {
+		@content;
+	}
+}
+
+@mixin medium {
+	@media screen and (max-width: 1400px) {
+		@content;
+	}
+}
