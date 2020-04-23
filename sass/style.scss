@@ -38,11 +38,22 @@ html{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 }
 
 .mhs-intro {
-	background-image: url("images/mhs-img1.jpg");
-	background-position: center center;
+	background-image: url("images/mhs-intro.jpg");
+	background-position: left center;
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #fff;
+	.mhs-col-left {
+		background-color: rgba(0,0,0,0.9);
+		padding: 40px;
+		opacity: 0;
+		transition-duration: 1s;
+		margin-left: -20px;
+		&.in-view {
+			opacity: 1;
+			margin-left: 0px;
+		}
+	}
 }
 
 /* The rest of the main page styles go here. */
