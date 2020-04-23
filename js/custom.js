@@ -41,6 +41,8 @@
 		var sec5 = $(".mhs-contact").offset();
 		var sec6 = $(".mhs-faq").offset();
 		
+		console.log(sec2);
+		
 		var vpos = $(document).scrollTop();
 	
 		var sec1_trigger = sec1.top-100;
@@ -51,27 +53,27 @@
 		var sec6_trigger = sec4.top-100;
 	
 		if(vpos < sec1.top){
-			$('#menu-homepage-navigation li.menu-item').addClass("active");
+			$('.mhs-primary-nav li.menu-item').addClass("active");
 		}
 		if((vpos >= sec1_trigger) && (vpos < sec2_trigger)) {
-			$('#menu-homepage-navigation li.menu-item').removeClass("active");
-			$('#menu-homepage-navigation li.menu-item-23').addClass("active");
+			$('.mhs-primary-nav li.menu-item').removeClass("active");
+			$('.mhs-primary-nav li.menu-item-23').addClass("active");
 		}
 		else if ((vpos >= sec2_trigger) && (vpos < sec3_trigger)) {
-			$('#menu-homepage-navigation li.menu-item').removeClass("active");
-			$('#menu-homepage-navigation li.menu-item-25').addClass("active");
+			$('.mhs-primary-nav li.menu-item').removeClass("active");
+			$('.mhs-primary-nav li.menu-item-25').addClass("active");
 		}
 		else if ((vpos >= sec3_trigger) && (vpos < sec4_trigger)) {
-			$('#menu-homepage-navigation li.menu-item').removeClass("active");
-			$('#menu-homepage-navigation li.menu-item-26').addClass("active");
+			$('.mhs-primary-nav li.menu-item').removeClass("active");
+			$('.mhs-primary-nav li.menu-item-26').addClass("active");
 		}
 		else if ((vpos >= sec4_trigger) && (vpos < sec5_trigger)) {
-			$('#menu-homepage-navigation li.menu-item').removeClass("active");
-			$('#menu-homepage-navigation li.menu-item-24').addClass("active");
+			$('.mhs-primary-nav li.menu-item').removeClass("active");
+			$('.mhs-primary-nav li.menu-item-24').addClass("active");
 		}
 		else if ((vpos >= sec5_trigger) && (vpos < sec6_trigger)) {
-			$('#menu-homepage-navigation li.menu-item').removeClass("active");
-			$('#menu-homepage-navigation li.menu-item-27').addClass("active");
+			$('.mhs-primary-nav li.menu-item').removeClass("active");
+			$('.mhs-primary-nav li.menu-item-27').addClass("active");
 		}
 	
 		if((vpos >= sec2.top) && (vpos < sec3.top)){
