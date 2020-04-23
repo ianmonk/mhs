@@ -8549,6 +8549,10 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   text-align: right;
   font-weight: 400;
   transition-duration: 1s;
+  opacity: 0.4;
+}
+header.mhs-header .mhs-primary-nav ul.nav-menu li.active a {
+  opacity: 1;
 }
 header.mhs-header .mhs-primary-nav.mhs-dark .mhs-primary-nav-line {
   background: #000;

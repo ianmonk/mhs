@@ -67,6 +67,10 @@ header.mhs-header {
 					text-align: right;
 					font-weight: 400;
 					transition-duration: 1s;
+					opacity: 0.4;
+				}
+				&.active a {
+					opacity: 1;
 				}
 			}
 		}
