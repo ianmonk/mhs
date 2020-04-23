@@ -8389,6 +8389,7 @@ body {
   position: relative;
   z-index: 1;
   background-attachment: fixed;
+  padding-right: 180px;
 }
 
 .mhs-intro {
@@ -8419,6 +8420,25 @@ body {
 
 .mhs-gallery {
   background: #fff;
+}
+.mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list {
+  width: 200px;
+  padding-top: 190px;
+}
+.mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li {
+  border: 1px solid #000;
+  border-radius: 0px;
+  color: #000;
+  transition-duration: 0.5s;
+  background: #fff;
+}
+.mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li.kt-tab-title-active {
+  background: #000;
+  color: #fff;
+}
+.mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap .wp-block-kadence-tab {
+  border: none;
+  border-radius: none;
 }
 
 .mhs-spaces {
