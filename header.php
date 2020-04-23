@@ -32,7 +32,7 @@
 			<div class="mhs-logo"><a href="/" class="mhs-home-link"></a></div>
 		</div><!-- .site-branding -->
 
-		<nav id="site-navigation" class="main-navigation">
+		<nav id="site-navigation" class="main-navigation mhs-primary-nav">
 			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mhs' ); ?></button>
 			<?php
 			wp_nav_menu(
@@ -42,5 +42,6 @@
 				)
 			);
 			?>
+			<div class="mhs-primary-nav-line"></div>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->

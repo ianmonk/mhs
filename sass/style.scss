@@ -28,6 +28,10 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
 
 html{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 
+body {
+	background-color: #000;
+}
+
 .wp-block-columns {
 	margin-bottom: 0px;
 }
@@ -43,12 +47,19 @@ html{-webkit-font-smoothing: antialiased;-moz-osx-font-smoothing: grayscale;}
 	background-size: cover;
 	background-repeat: no-repeat;
 	color: #fff;
+	opacity: 0;
+	transition-duration: 1s;
+	&.in-view {
+		opacity: 1;
+	}
 	.mhs-col-left {
 		background-color: rgba(0,0,0,0.9);
-		padding: 40px;
+		padding: 200px 50px 0;
 		opacity: 0;
 		transition-duration: 1s;
+		transition-delay: 0.5s;
 		margin-left: -20px;
+		height: 100%;
 		&.in-view {
 			opacity: 1;
 			margin-left: 0px;
