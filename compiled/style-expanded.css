@@ -8448,7 +8448,7 @@ body {
   display: block;
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap {
-  width: calc(100% - 380px);
+  width: calc(100% - 200px);
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap .wp-block-kadence-tab {
   border: none;
@@ -8570,7 +8570,6 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li {
   background-repeat: no-repeat;
   color: #fff;
   text-align: right;
-  transition-duration: 1s;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   text-decoration: none;
@@ -8582,8 +8581,8 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   line-height: 20px;
   text-align: right;
   font-weight: 400;
-  transition-duration: 1s;
   opacity: 0.25;
+  outline: 0;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li.active a {
   opacity: 1;
