@@ -7821,6 +7821,7 @@ a:visited {
 
 a:hover, a:focus, a:active {
   color: inherit;
+  outline: 0;
 }
 
 a:focus {
@@ -8503,6 +8504,9 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   opacity: 0.25;
   outline: 0;
   transition-duration: 0.66s;
+}
+header.mhs-header .mhs-primary-nav ul.nav-menu li a:focus {
+  outline: 0;
 }
 header.mhs-header .mhs-primary-nav ul.nav-menu li.active a {
   opacity: 1;
