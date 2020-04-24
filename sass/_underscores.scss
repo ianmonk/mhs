@@ -571,15 +571,15 @@ textarea {
 ## Links
 --------------------------------------------------------------*/
 a {
-	color: royalblue;
+	color: inherit;
 }
 
 a:visited {
-	color: purple;
+	color: inherit;
 }
 
 a:hover, a:focus, a:active {
-	color: midnightblue;
+	color: inherit;
 }
 
 a:focus {
@@ -592,7 +592,7 @@ a:hover, a:active {
 
 /*--------------------------------------------------------------
 ## Menus
---------------------------------------------------------------*/
+--------------------------------------------------------------
 .main-navigation {
 	clear: both;
 	display: block;
@@ -644,6 +644,8 @@ a:hover, a:active {
 	display: block;
 	text-decoration: none;
 }
+
+*/
 
 /* Small menu. */
 .menu-toggle,

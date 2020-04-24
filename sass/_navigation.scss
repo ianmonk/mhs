@@ -55,6 +55,7 @@ header.mhs-header {
 				background-repeat: no-repeat;
 				color: #fff;
 				text-align: right;
+				transition-duration: 0.66s;
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -67,6 +68,7 @@ header.mhs-header {
 					font-weight: 400;
 					opacity: 0.25;
 					outline: 0;
+					transition-duration: 0.66s;
 				}
 				&.active a {
 					opacity: 1;
