@@ -8424,7 +8424,7 @@ body {
   background: #fff;
 }
 .mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list {
-  width: 220px;
+  width: 200px;
   padding-top: 200px;
 }
 .mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li {
@@ -8450,7 +8450,7 @@ body {
   display: block;
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap {
-  width: calc(100% - 220px);
+  width: calc(100% - 200px);
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap .wp-block-kadence-tab {
   border: none;
