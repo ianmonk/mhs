@@ -8591,17 +8591,20 @@ header.mhs-header .mhs-primary-nav ul#primary-menu li a {
 header.mhs-header .mhs-primary-nav ul#primary-menu li a:focus {
   outline: 0;
 }
+header.mhs-header .mhs-primary-nav ul#primary-menu li a:hover {
+  opacity: 1;
+}
 header.mhs-header .mhs-primary-nav ul#primary-menu li.active a {
   opacity: 1;
 }
 header.mhs-header .mhs-primary-nav.mhs-dark .mhs-primary-nav-line {
   background: #000;
 }
-header.mhs-header .mhs-primary-nav.mhs-dark ul.nav-menu li {
+header.mhs-header .mhs-primary-nav.mhs-dark ul#primary-menu li {
   color: #000;
   background-image: url("images/circle-black.svg");
 }
-header.mhs-header .mhs-primary-nav.mhs-dark ul.nav-menu li a {
+header.mhs-header .mhs-primary-nav.mhs-dark ul#primary-menu li a {
   color: #000;
 }
 header.mhs-header .mhs-primary-nav a.menu-toggle {

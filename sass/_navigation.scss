@@ -72,6 +72,9 @@ header.mhs-header {
 					&:focus {
 						outline: 0;
 					}
+					&:hover {
+						opacity: 1;
+					}
 				}
 				&.active a {
 					opacity: 1;
@@ -82,7 +85,7 @@ header.mhs-header {
 			.mhs-primary-nav-line {
 				background: #000;
 			}
-			ul.nav-menu {
+			ul#primary-menu {
 				li {
 					color: #000;
 					background-image: url("images/circle-black.svg");
