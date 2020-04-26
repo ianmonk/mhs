@@ -8408,7 +8408,7 @@ body {
 }
 .mhs-intro .mhs-col-left {
   background-color: rgba(0, 0, 0, 0.9);
-  padding: 200px 50px 0;
+  padding: 200px 50px 0 55px;
   opacity: 0;
   transition-duration: 1s;
   transition-delay: 0.5s;
