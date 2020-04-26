@@ -8475,10 +8475,10 @@ header.mhs-header .mhs-primary-nav .mhs-primary-nav-line {
   z-index: 1;
   transition-duration: 1s;
 }
-header.mhs-header .mhs-primary-nav ul.nav-menu {
+header.mhs-header .mhs-primary-nav ul#primary-menu {
   padding-right: 25px;
 }
-header.mhs-header .mhs-primary-nav ul.nav-menu li {
+header.mhs-header .mhs-primary-nav ul#primary-menu li {
   display: block;
   float: none;
   margin: 40px 0;
@@ -8491,7 +8491,7 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li {
   text-align: right;
   transition-duration: 0.66s;
 }
-header.mhs-header .mhs-primary-nav ul.nav-menu li a {
+header.mhs-header .mhs-primary-nav ul#primary-menu li a {
   text-decoration: none;
   color: #fff;
   letter-spacing: 2px;
@@ -8505,10 +8505,10 @@ header.mhs-header .mhs-primary-nav ul.nav-menu li a {
   outline: 0;
   transition-duration: 0.66s;
 }
-header.mhs-header .mhs-primary-nav ul.nav-menu li a:focus {
+header.mhs-header .mhs-primary-nav ul#primary-menu li a:focus {
   outline: 0;
 }
-header.mhs-header .mhs-primary-nav ul.nav-menu li.active a {
+header.mhs-header .mhs-primary-nav ul#primary-menu li.active a {
   opacity: 1;
 }
 header.mhs-header .mhs-primary-nav.mhs-dark .mhs-primary-nav-line {
