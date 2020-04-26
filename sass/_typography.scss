@@ -33,9 +33,11 @@ strong em, b em {
 h1 {
 	font-family: 'Lato', sans-serif;
 	font-weight: 300;
-	font-size: 3em;
-	letter-spacing: -2px;
-	line-height: 1.1em;
+	font-size: 2.667em;
+	letter-spacing: -1px;
+	line-height: 1.15em;
+	color: inherit;
+	text-transform: uppercase;
 	@include small {
 		font-size: 3em;
 	}
@@ -50,7 +52,7 @@ h1 {
 
 h2 {
 	font-family: 'Lato', sans-serif;
-	font-size: 2.667em;
+	font-size: 2em;
 	line-height: 1.15em;
 	font-weight: normal;
 	letter-spacing: -1px;
