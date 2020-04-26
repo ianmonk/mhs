@@ -92,5 +92,32 @@ header.mhs-header {
 				}
 			}
 		}
+		a.menu-toggle {
+			display: none;
+			width: 40px;
+			height: 40px;
+			background: transparent;
+			border: 0px;
+			@include mobile {
+				display: block;
+			}
+			.bar {
+				width: 26px;
+				height: 2px;
+				background: #fff;
+				&:nth-child(1){
+					top: 8px;
+					left: 7px;
+				}
+				&:nth-child(2){
+					top: 19px;
+					left: 7px;
+				}
+				&:nth-child(3){
+					top: 30px;
+					left: 7px;
+				}
+			}
+		}
 	}
 }

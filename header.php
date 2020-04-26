@@ -33,7 +33,11 @@
 		</div><!-- .site-branding -->
 
 		<nav id="site-navigation" class="main-navigation mhs-primary-nav">
-			<button class="menu-toggle" aria-controls="primary-menu" aria-expanded="false"><?php esc_html_e( 'Primary Menu', 'mhs' ); ?></button>
+			<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+				<span class="bar">
+				<span class="bar">
+				<span class="bar">
+			</a>
 			<?php
 			wp_nav_menu(
 				array(
