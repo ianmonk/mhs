@@ -82,23 +82,24 @@ body {
 				background: transparent;
 				border-radius: 0px;
 				&.kt-tab-title-active {
-					a {
+					a.kt-tab-title {
 						background: #000;	
 						color: #fff;
 					}
 				}
-				a {
+				a.kt-tab-title {
 					border-radius: 0px !important;
 					border-width: 1px !important;
 					border-color: #000;
 					border-style: solid;
 					transition-duration: 0.5s;
-					background: #fff;
-					color: #000;
+					background: #fff !important;
+					color: #000 !important;
 					text-align: center;
 					text-transform: uppercase;
 					font-weight: 400;
 					display: block;
+					padding: 12px !important;
 				}
 			}
 		}
