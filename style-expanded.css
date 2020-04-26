@@ -8340,7 +8340,8 @@ body {
 }
 .mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list {
   width: 170px;
-  padding: 200px 0 0 20px;
+  padding: 200px 0 0 0;
+  margin-left: 20px;
 }
 .mhs-gallery .wp-block-kadence-tabs ul.kt-tabs-title-list li {
   border: none;
@@ -8371,7 +8372,7 @@ body {
   width: 170px;
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap {
-  width: calc(100% - 200px);
+  width: calc(100% - 190px);
 }
 .mhs-gallery .wp-block-kadence-tabs .kt-tabs-content-wrap .wp-block-kadence-tab {
   border: none;
@@ -8440,7 +8441,7 @@ header.mhs-header {
   z-index: 999;
 }
 header.mhs-header .site-branding {
-  margin: 50px 0 0 50px;
+  margin: 55px 0 0 54px;
 }
 header.mhs-header .site-branding .mhs-logo {
   width: 120px;
