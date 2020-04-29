@@ -8468,8 +8468,10 @@ body {
 
 .mhs-spaces {
   background-image: url("images/mhs-bg1.jpg");
-  color: #fff;
-  padding: 140px 220px 0;
+}
+.mhs-spaces .mhs-col-accordion {
+  background: #fff;
+  height: 100%;
 }
 
 .mhs-pricing {
