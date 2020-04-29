@@ -69,7 +69,7 @@
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
 			$('.mhs-primary-nav li.menu-item-25').addClass("active");
 			$(".mhs-primary-nav").removeClass("mhs-dark");
-			$(".mhs-logo").removeClass("mhs-dark");
+			$(".mhs-logo").addClass("mhs-dark");
 		}
 		else if ((vpos >= sec4_trigger) && (vpos < sec5_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");

@@ -121,9 +121,29 @@ body {
 
 .mhs-spaces {
 	background-image: url("images/mhs-bg1.jpg");
+	.wp-block-group__inner-container {
+		height: 100%;
+		.wp-block-columns {
+			height: 100%;
+		}
+	}
 	.mhs-col-accordion {
 		background: #fff;
 		height: 100%;
+		.wp-block-kadence-accordion {
+			margin: 120px 60px 0px 120px;
+			.kt-blocks-accordion-title {
+				font-size: 24px;
+				text-transform: uppercase;
+				letter-spacing: -1px;
+				font-weight: 300;
+				color: #000;
+			}
+			.kt-accordion-panel-inner {
+				padding: 20px 0px;
+				border: 0px;
+			}
+		}
 	}
 }
 
