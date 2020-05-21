@@ -47,8 +47,8 @@
 		var sec2_trigger = sec2.top-100;
 		var sec3_trigger = sec3.top-100;
 		var sec4_trigger = sec4.top-100;
-		var sec5_trigger = sec4.top-100;
-		var sec6_trigger = sec4.top-100;
+		var sec5_trigger = sec5.top-100;
+		var sec6_trigger = sec6.top-100;
 	
 		if(vpos < sec1.top){
 			$('.mhs-primary-nav li.menu-item').addClass("active");
@@ -75,7 +75,7 @@
 			$('.mhs-primary-nav li.menu-item').removeClass("active");
 			$('.mhs-primary-nav li.menu-item-26').addClass("active");
 			$(".mhs-primary-nav").removeClass("mhs-dark");
-			$(".mhs-logo").removeClass("mhs-dark");
+			$(".mhs-logo").addClass("mhs-dark");
 		}
 		else if ((vpos >= sec5_trigger) && (vpos < sec6_trigger)) {
 			$('.mhs-primary-nav li.menu-item').removeClass("active");

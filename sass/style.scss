@@ -42,14 +42,67 @@ body {
 	position: relative;
 	z-index: 1;
 	background-attachment: fixed;
+	background-repeat: no-repeat;
 	padding-right: 180px;
+	.wp-block-kadence-accordion {
+		margin: 0px 60px 0px 210px;
+		padding-top: 140px;
+		.kt-blocks-accordion-header {
+			padding: 14px 0px;
+			border: none;
+			&:active, &:focus {
+				outline: none;
+			}
+			&.kt-accordion-panel-active {
+				border: none;
+				.kt-blocks-accordion-title {
+					
+				}
+				.kt-blocks-accordion-icon-trigger {
+					&:after {
+						opacity: 0;
+					}
+				}
+			}
+			.kt-blocks-accordion-title {
+				font-size: 20px;
+				text-transform: uppercase;
+				letter-spacing: 3px;
+				font-weight: 300;
+				color: #000;
+				font-family: 'Lato', sans-serif;
+				transition-duration: 1s;
+			}
+			.kt-blocks-accordion-icon-trigger {
+				&:before {
+					transform: none !important;
+					width: 16px;
+					height: 1px;
+					transition-duration: 1s; 
+				}
+				&:after { 
+					transform: rotate(90deg) !important;
+					width: 16px;
+					height: 1px;
+					right: auto;
+					left: 2px;
+					transition-duration: 1s;
+					opacity: 1;
+				}
+			}
+		}
+		
+		.kt-accordion-panel-inner {
+			padding: 20px 0px;
+			border: 0px;
+		}
+	}
 }
 
 .mhs-intro {
 	background-image: url("images/mhs-bg2.jpg");
 	background-position: left center;
 	background-size: cover;
-	background-repeat: no-repeat;
 	color: #fff;
 	opacity: 0;
 	transition-duration: 1s;
@@ -64,9 +117,20 @@ body {
 		transition-delay: 0.5s;
 		margin-left: -20px;
 		height: 100%;
+		flex-basis: 40%;
 		&.in-view {
 			opacity: 1;
 			margin-left: 0px;
+		}
+		@include small {
+			flex-basis: 50%;
+			padding-top: 165px;
+		}
+	}
+	.mhs-col-right {
+		flex-basis: 60%;
+		@include small {
+			flex-basis: 50%;
 		}
 	}
 }
@@ -120,35 +184,27 @@ body {
 }
 
 .mhs-spaces {
-	background-image: url("images/mhs-bg1.jpg");
+	background-image: url("images/mhs-bg3.jpg");
+	background-size: auto 100%;
+	background-color: #fff;
+	background-position: right center;
 	.wp-block-group__inner-container {
 		height: 100%;
-		.wp-block-columns {
-			height: 100%;
-		}
-	}
-	.mhs-col-accordion {
+		width: 75%;
 		background: #fff;
-		height: 100%;
-		.wp-block-kadence-accordion {
-			margin: 150px 60px 0px 200px;
-			.kt-blocks-accordion-title {
-				font-size: 24px;
-				text-transform: uppercase;
-				letter-spacing: -1px;
-				font-weight: 300;
-				color: #000;
-			}
-			.kt-accordion-panel-inner {
-				padding: 20px 0px;
-				border: 0px;
-			}
-		}
 	}
 }
 
 .mhs-pricing {
-	background-image: url("images/mhs-bg1.jpg");
+	background-image: url("images/mhs-bg4.jpg");
+	background-size: auto 100%;
+	background-color: #fff;
+	background-position: right center;
+	.wp-block-group__inner-container {
+		height: 100%;
+		width: 75%;
+		background: #fff;
+	}
 }
 
 .mhs-contact {
