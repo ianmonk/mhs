@@ -31,13 +31,14 @@
 		<div class="site-branding">
 			<div class="mhs-logo"><a href="/" class="mhs-home-link"></a></div>
 		</div><!-- .site-branding -->
-
+		
+		<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
+			<span class="bar"></span>
+			<span class="bar"></span>
+			<span class="bar"></span>
+		</a>
+			
 		<nav id="site-navigation" class="main-navigation mhs-primary-nav">
-			<a class="menu-toggle" aria-controls="primary-menu" aria-expanded="false">
-				<span class="bar">
-				<span class="bar">
-				<span class="bar">
-			</a>
 			<?php
 			wp_nav_menu(
 				array(
@@ -48,4 +49,5 @@
 			?>
 			<div class="mhs-primary-nav-line"></div>
 		</nav><!-- #site-navigation -->
+		
 	</header><!-- #masthead -->

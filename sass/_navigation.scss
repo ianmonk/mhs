@@ -2,16 +2,29 @@ header.mhs-header {
 	position: fixed;
 	top: 0px;
 	width: 100%;
-	z-index: 999;
+	z-index: 100;
+	@include mobile {
+		background: #000;
+		height: 76px;
+	}
 	.site-branding {
-		margin: 55px 0 0 55px;
+		margin: 40px 0 0 40px;
+		@include mobile {
+			margin: 10px 0 0 15px;
+		}
 		.mhs-logo {
-			width: 120px;
-			height: 120px;
+			width: 100px;
+			height: 100px;
 			background-image: url("images/mhs-logo-white.svg");
 			background-repeat: no-repeat;
 			background-size: auto 100%;
 			background-position: left center;
+			position: relative;
+			z-index: 102;
+			@include mobile {
+				width: 56px;
+				height: 56px;
+			}
 			a.mhs-home-link {
 				width: 100%;
 				height: 100%;
@@ -19,6 +32,58 @@ header.mhs-header {
 			}
 			&.mhs-dark {
 				background-image: url("images/mhs-logo-black.svg");
+				@include mobile {
+					background-image: url("images/mhs-logo-white.svg");
+				}
+			}
+		}
+	}
+	a.menu-toggle {
+		display: none;
+		width: 40px;
+		height: 40px;
+		background: transparent;
+		border: 0px;
+		position: absolute;
+		top: 15px;
+		right: 20px;
+		z-index: 103;
+		@include mobile {
+			display: block;
+		}
+		.bar {
+			width: 26px;
+			height: 2px;
+			background: #fff;
+			display: inline-block;
+			position: absolute;
+			transition-duration: 0.5s;
+			&:nth-child(1){
+				top: 8px;
+				left: 7px;
+			}
+			&:nth-child(2){
+				top: 19px;
+				left: 7px;
+			}
+			&:nth-child(3){
+				top: 30px;
+				left: 7px;
+			}
+		}
+		&.active {
+			.bar {
+				&:nth-child(1){
+					transform: rotate(45deg);
+					top: 15px;
+				}
+				&:nth-child(2){
+					opacity: 0;
+				}
+				&:nth-child(3){
+					transform: rotate(-45deg);
+					top: 15px;
+				}
 			}
 		}
 	}
@@ -31,7 +96,24 @@ header.mhs-header {
 		height: 100vh;
 		display: flex;
 		align-items: center;
-		z-index: 999;
+		z-index: 101;
+		@include mobile {
+			width: 100%;
+			height: 100%;
+			background: #000;
+			top: -100%;
+			opacity: 0;
+			transition-duration: 0.75s;
+			&.mobile-active {
+				top: 0;
+				opacity: 1;
+			}
+		}
+		.menu-fixed-side-nav-container {
+			@include mobile {
+				width: 100%;
+			}
+		}
 		.mhs-primary-nav-line {
 			position: absolute;
 			right: 30px;
@@ -41,6 +123,9 @@ header.mhs-header {
 			background: #fff;
 			z-index: 1;
 			transition-duration: 1s;
+			@include mobile {
+				display: none;
+			}
 		}
 		ul#primary-menu {
 			padding-right: 25px;
@@ -57,6 +142,13 @@ header.mhs-header {
 				color: #fff;
 				text-align: right;
 				transition-duration: 0.66s;
+				@include mobile {
+					background-image: none;
+					text-align: center;
+					width: 100%;
+					padding: 0px;
+					margin: 0 0 40px;
+				}
 				a {
 					text-decoration: none;
 					color: #fff;
@@ -70,6 +162,11 @@ header.mhs-header {
 					opacity: 0.25;
 					outline: 0;
 					transition-duration: 0.66s;
+					@include mobile {
+						text-align: center;
+						opacity: 1;
+						font-size: 24px;
+					}
 					&:focus {
 						outline: 0;
 					}
@@ -93,33 +190,6 @@ header.mhs-header {
 					a {
 						color: #000;
 					}
-				}
-			}
-		}
-		a.menu-toggle {
-			display: none;
-			width: 40px;
-			height: 40px;
-			background: transparent;
-			border: 0px;
-			@include mobile {
-				display: block;
-			}
-			.bar {
-				width: 26px;
-				height: 2px;
-				background: #fff;
-				&:nth-child(1){
-					top: 8px;
-					left: 7px;
-				}
-				&:nth-child(2){
-					top: 19px;
-					left: 7px;
-				}
-				&:nth-child(3){
-					top: 30px;
-					left: 7px;
 				}
 			}
 		}

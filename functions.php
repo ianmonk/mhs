@@ -150,6 +150,8 @@ function mhs_scripts() {
 
 	wp_enqueue_script( 'mhs-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), _S_VERSION, true );
 	
+	wp_enqueue_script( 'mhs-debounce', get_template_directory_uri() . '/js/jquery.debounce.min.js', array(), '20200609', true );
+	
 	wp_enqueue_script( 'mhs-scripts', get_template_directory_uri() . '/js/custom.js', array('jquery'), _S_VERSION, true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {

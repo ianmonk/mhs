@@ -36,6 +36,19 @@ body {
 	margin-bottom: 0px;
 }
 
+.mhs-desktop {
+	@include mobile {
+		display: none;
+	}
+}
+
+.mhs-mobile {
+	display: none;
+	@include mobile {
+		display: block;
+	}	
+}
+
 .mhs-section {
 	min-height: 100vh;
 	height: 100vh;
@@ -44,9 +57,24 @@ body {
 	background-attachment: fixed;
 	background-repeat: no-repeat;
 	padding-right: 180px;
+	@include mobile {
+		padding-right: 0px;
+		background-attachment: scroll;
+		height: auto;
+	}
+	.wp-block-group__inner-container {
+		height: 100%;
+		width: 70%;
+		padding: 140px 60px 80px 170px;
+		box-sizing: border-box;
+		background: #fff;
+		@include mobile {
+			width: 100%;
+			height: auto;
+			padding: 40px;
+		}
+	}
 	.wp-block-kadence-accordion {
-		margin: 0px 60px 0px 210px;
-		padding-top: 140px;
 		.kt-blocks-accordion-header {
 			padding: 14px 0px;
 			border: none;
@@ -100,54 +128,55 @@ body {
 }
 
 .mhs-intro {
-	background-image: url("images/mhs-bg2.jpg");
-	background-position: left center;
-	background-size: cover;
-	color: #fff;
-	opacity: 0;
+	background-image: url("images/mhs-bg6.jpg");
+	background-position: right center;
+	background-size: auto 100%;
 	transition-duration: 1s;
-	&.in-view {
-		opacity: 1;
+	color: #fff;
+	@include mobile {
+		background-image: url("images/mhs-bg2-mobile.jpg");
+		background-position: center top;
+		background-size: 100% auto;
+		padding-top: 265px;
+		margin-top: 70px;
 	}
-	.mhs-col-left {
-		background-color: rgba(0,0,0,0.9);
-		padding: 200px 50px 0 55px;
-		opacity: 0;
-		transition-duration: 1s;
-		transition-delay: 0.5s;
-		margin-left: -20px;
+	.wp-block-group__inner-container {
 		height: 100%;
-		flex-basis: 40%;
-		&.in-view {
-			opacity: 1;
-			margin-left: 0px;
-		}
-		@include small {
-			flex-basis: 50%;
-			padding-top: 165px;
-		}
-	}
-	.mhs-col-right {
-		flex-basis: 60%;
-		@include small {
-			flex-basis: 50%;
+		padding: 135px 80px 60px 170px;
+		box-sizing: border-box;
+		width: 50%;
+		background: #000;
+		@include mobile {
+			padding: 40px;
+			width: 100%;
 		}
 	}
 }
 
 .mhs-gallery {
 	background: #fff;
+	.wp-block-group__inner-container {
+		padding: 10px 0px 10px 160px;
+		width: 100%;
+		@include mobile {
+			padding: 40px 10px;
+		}
+	}
 	.wp-block-kadence-tabs {
 		ul.kt-tabs-title-list {
-			width: 170px;
-			padding: 200px 0 0 0;
-			margin-left: 20px;
+			width: 150px;
+			padding: 190px 0 0 0;
+			margin-left: 0px;
+			@include mobile {
+				width: auto;
+				padding: 0px;
+			}
 			li {
 				border: none;
 				background: transparent;
 				border-radius: 0px;
 				margin: 0px 0px 20px;
-				width: 170px;
+				width: 150px;
 				&.kt-tab-title-active {
 					a.kt-tab-title {
 						background: #000 !important;	
@@ -169,12 +198,18 @@ body {
 					display: block;
 					box-sizing: border-box;
 					padding: 12px !important;
-					width: 170px;
+					width: 150px;
+					@include mobile {
+						width: auto;
+					}
 				}
 			}
 		}
 		.kt-tabs-content-wrap {
-			width: calc(100% - 190px);
+			width: calc(100% - 150px);
+			@include mobile {
+				width: 100%;
+			}
 			.wp-block-kadence-tab {
 				border: none;
 				border-radius: none;
@@ -183,15 +218,27 @@ body {
 	}
 }
 
+.mhs-story {
+	background-image: url("images/mhs-bg7.jpg");
+	background-size: auto 100%;
+	background-color: #fff;
+	background-position: right center;
+	@include mobile {
+		background-size: 100% auto;
+		padding-top: 300px;
+		background-position: center top;
+	}
+}
+
 .mhs-spaces {
 	background-image: url("images/mhs-bg3.jpg");
 	background-size: auto 100%;
 	background-color: #fff;
 	background-position: right center;
-	.wp-block-group__inner-container {
-		height: 100%;
-		width: 75%;
-		background: #fff;
+	@include mobile {
+		background-size: 100% auto;
+		padding-top: 300px;
+		background-position: center top;
 	}
 }
 
@@ -200,19 +247,75 @@ body {
 	background-size: auto 100%;
 	background-color: #fff;
 	background-position: right center;
-	.wp-block-group__inner-container {
-		height: 100%;
-		width: 75%;
-		background: #fff;
+	@include mobile {
+		background-size: 100% auto;
+		padding-top: 300px;
+		background-position: center top;
 	}
 }
 
 .mhs-contact {
 	background-image: url("images/mhs-bg1.jpg");
+	background-size: cover;
+	background-position: center center;
+	.wp-block-group__inner-container {
+		text-align: center;
+		color: #fff;
+		height: 100%;
+		width: 100%;
+		padding: 140px 80px 140px 210px;
+		box-sizing: border-box;
+		background: transparent;
+		@include mobile {
+			width: 100%;
+			height: auto;
+			padding: 40px;
+		}
+	}
 }
 
 .mhs-faq {
-	background-image: url("images/mhs-bg1.jpg");
+	background-image: url("images/mhs-lounge.jpg");
+	background-size: auto 100vh;
+	background-color: #fff;
+	background-position: right center;
+	height: auto;
+	@include mobile {
+		background-size: 100% auto;
+		padding-top: 300px;
+		background-position: center top;
+	}
+	.wp-block-kadence-accordion {
+		.kt-blocks-accordion-header {
+			padding: 8px 0px;
+			.kt-blocks-accordion-title {
+				font-size: 16px;
+				font-weight: bold;
+				letter-spacing: 0px;
+				text-transform: none;
+			}
+			.kt-blocks-accordion-icon-trigger {
+				&:before {
+					transform: none !important;
+					width: 12px;
+					height: 1px;
+					transition-duration: 1s; 
+				}
+				&:after { 
+					transform: rotate(90deg) !important;
+					width: 12px;
+					height: 1px;
+					right: auto;
+					left: 2px;
+					transition-duration: 1s;
+					opacity: 1;
+				}
+			}
+		}
+		.kt-accordion-panel-inner {
+			padding: 14px 0px;
+		}
+	}
 }
 
 
